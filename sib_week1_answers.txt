@@ -1,3 +1,10 @@
 *** Cut and paste the for loop here ***
+                    {% for message in messages %}
+{{messages}}
+                    {% endfor %}
 
 *** What is the for loop doing? ***
+messages is a list of messages that gets passed back to the client. The for
+loop iterates over each item in the list and puts it in the HTML. the result is
+that the entire list gets printed because each element of the list is now
+contained within the HTML.
